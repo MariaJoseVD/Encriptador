@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">  
+    <head> 
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width">
+        <title>Encriptador</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <script type="text/javascript" src="script.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet"> 
+    </head> 
+<body>
+    <div class="caja">
+        <h1><img class="logo" src="images/Logo.png" alt="ALURA"></h1>
+        </div>
+        <div class="contenedor"> 
+            <textarea id="entrada" class="contenedor-txt" required onkeypress="return check(event)" oninput="this.value=this.value.toLowerCase();"
+            placeholder="Ingrese el texto aquí"></textarea>
+        </div>
+        <div class="mainBotones">
+        <div class="aviso-entero">
+             <img class="vector" src="images/vector.png" alt="aviso"><p class="aviso">Solo letras minúsculas y sin tilde.</p>
+        </div>
+        <div class="boton-encriptar">
+            <button type="button" onclick="encriptar()" class="boton1" id="encriptar">Encriptar</button>
+        </div>
+        <div class="boton-desencriptar">
+            <button type="button" onclick="desencriptar()" class="boton2" id="desencriptar">Desencriptar</button>
+        </div>
+    </div>   
+    
+        <div class="caja-salida"> 
+             <img src="images/Muñeco.png" alt="fondo">
+             <div class="texto-salida">
+             <p id="titulo">Ningún mensaje fue encontrado</p>
+             <p id="bajada">Ingresa el texto que desees encriptar o desencriptar.
+        </div>
+            <textarea id="salida" cols="30" rows="10" hidden ></textarea>
+            <button id="copiar" hidden onclick="copiar()">Copiar</button>
+        </div>    
+    </body>
+</html>

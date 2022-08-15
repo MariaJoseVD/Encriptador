@@ -1,0 +1,265 @@
+body{
+    font-family: 'Inter', sans-serif;
+    background-color: #E5E5E5;
+}
+
+.caja{
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+}
+
+.logo{
+    width: 10%;
+    margin-top: 3%;
+    margin-left: 5%;
+}
+
+.contenedor-txt{
+    border: none;
+    resize: none;
+    outline: 0;
+    width: 40%;
+    color: #0A3871;
+    font-size: 32px;
+    line-height: 48px;
+    background-color: #E5E5E5;
+    margin-left: 15%;
+}
+
+.aviso-entero{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+    position: absolute;
+    width: 229px;
+    height: 18px;
+    bottom: 80px;
+    opacity: 0.8;
+}
+
+.vector{
+    width: 8%;    
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+  }
+
+.aviso{
+    font-size: 12px;
+    line-height: 150%;
+    color: #495057;
+}
+
+.boton-encriptar{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 8px;
+    width: 250px;
+    height: 67px;
+    background: #0a3871;
+    border-radius: 24px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.boton1{
+    background: #0a3871;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #ffffff;
+    flex-grow: 1;
+    border-width: 0;
+  }
+
+.boton-encriptar:hover{
+    opacity: 0.8;
+  }
+
+.boton-desencriptar{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    width: 250px;
+    height: 67px;
+    background: #EFF1FA;
+    border-radius: 24px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.3s;
+    border: 1px solid #0A3871;
+  }
+
+.boton2{
+    background: #EFF1FA;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #0a3871;
+    flex-grow: 1;
+    border-width: 0;
+  }
+
+.boton-desencriptar:hover{
+   opacity: 0.8;
+ }
+
+.mainBotones{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 5px;
+    gap: 24px;
+    position: absolute;
+    left: 15%;
+    top: 85%;
+}
+
+.caja-salida {
+    position: absolute;
+    width: 30%;
+    height: 89%;
+    left: 60%;
+    top: 40px;
+    background: #FFFFFF;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+}
+
+#salida{
+    width: 23vw;
+    height: 75%;
+    margin-top: 3vh;
+    margin-left: 1vw;
+    display: none;
+    border: none;
+    resize: none;
+    font-size: 24px;
+    line-height: 120%;
+    color: #495057;
+    padding: 20px;
+    
+}
+
+.texto.salida{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    padding: 10%;
+}
+
+#titulo{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    text-align: center;
+    color: #343A40;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+#bajada{
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: #495057;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+
+}
+#copiar{
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    font-size: 16px;
+    background-color: #EFF1FA;
+    height: 69px;
+    width: 252px;
+    cursor: pointer;
+    margin: 0 auto;
+
+}
+
+
+@media screen and (max-width:480px){
+    .caja {
+        width: auto;
+        max-height: fit-content;
+    }
+
+    .logo{
+        width: 25%;
+        margin-top: 2%;
+        margin-left: 3%;
+    }
+
+    .contenedor-txt{
+        width: 92%;
+        margin-left: 5%;
+    }
+
+    .mainBotones{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        left: 15%;
+        top: 67%;
+    }
+
+    .aviso-entero{
+        position: absolute;
+        padding-bottom: 100px;
+    }
+
+    .caja-salida{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        width: 343px;
+        height: auto;
+        left: 16px;
+        top: 90%;
+    }
+
+    .caja-salida img{
+        display: none;
+    }
+
+    #salida{
+        width: auto;
+    }
+
+    #copiar{
+        margin: auto;
+        flex-direction: column;
+        text-align: center;
+
+  
+    }
+
+
+}
+
